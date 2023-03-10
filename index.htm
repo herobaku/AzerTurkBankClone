@@ -27,16 +27,15 @@
           </div>
         </div>
       </div>
-
       <div class="header__menu">
         <div class="container container-1080">
-          <div class="row align-center">
+          <div class="row relative between align-center">
+            <a class="header__menu-burger"></a>
             <div class="header__menu-logo">
               <a href="#">
                 <img src="./img/logo.svg" alt="" />
               </a>
             </div>
-
             <div class="header__menu-nav">
               <nav class="header__menu-top">
                 <div class="header__menu-top-left">
@@ -94,7 +93,7 @@
                 <div class="header__menu-bottom-left">
                   <ul id="menu__bottom-left">
                     <li class="active">
-                      <a href="#">Kreditler</a>
+                      <a href="#kreditler">Kreditler</a>
                     </li>
                     <li>
                       <a href="#">Ipoteka</a>
@@ -119,10 +118,15 @@
                 </div>
               </nav>
             </div>
+            <div class="header__menu-contact">
+              <a href="#">
+                <img src="./img/atb_945_sign.svg" alt="tel" />
+              </a>
+            </div>
           </div>
         </div>
       </div>
-      <div class="header__nav">
+      <div class="header__nav" id="kreditler">
         <div class="container relative container-1080">
           <div class="header__nav-nav row">
             <div class="header__nav-l"></div>
@@ -255,7 +259,126 @@
         </div>
       </div>
     </header>
-    <main></main>
+    <main>
+      <!-- Section Mobile -->
+      <section class="section__mob">
+        <div class="section__mob-column">
+          <div class="section__mob-clients">
+            <div class="section__selected relative">
+              <a href="#" class="langSelect">RU</a>
+              <div class="select">
+                <span>
+                  Fərdi
+                </span>
+              </div>
+              <ul>
+                <li class="selected"><a href="#">Fərdi</a></li>
+                <li><a href="#">Biznes</a></li>
+                <li><a href="#">Kredit və kart ödənişləri</a></li>
+                <li><a href="#">Bank haqqında</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="section__mob-menu">
+            <ul class="section-withmenu">
+              <li><a href="#">Kreditlər</a></li>
+              <li><a href="#">Ipoteka</a></li>
+              <li><a href="#">Kartlar</a></li>
+              <li><a href="#">Əmanətlər</a></li>
+              <li><a href="#">Xidmətlər</a></li>
+              <li><a href="#" class="atb">ATB360</a></li>
+            </ul>
+            <ul class="section-submenu">
+              <li><a href="#"></a></li>
+            </ul>
+          </div>
+          <div class="section__mob-others">
+            <div class="section__mob-other">
+              <h4 class="title">Xidmətlər</h4>
+              <ul>
+                <li><a href="#">Kartdan karta köçürmə</a></li>
+                <li><a href="#">kredit və karta ödənişləri</a></li>
+                <li><a href="#">Kartın yenilənməsi</a></li>
+                <li><a href="#">Tariflər</a></li>
+                <li><a href="#">Filiallar</a></li>
+                <li><a href="#">Müxbir hesablara xidmət</a></li>
+                <li><a href="#">Google Pay</a></li>
+                <li><a href="#">Appple Pay</a></li>
+                <li><a href="#">Türkiyəyə dəstək</a></li>
+              </ul>
+            </div>
+            <div class="section__mob-other">
+              <h4 class="title">Daha ətraflı</h4>
+              <ul>
+                <li><a href="#">Bank Məlumatları</a></li>
+                <li><a href="#">Məlumatların acıqlanması</a></li>
+                <li><a href="#">Aktiv kampaniyalar</a></li>
+                <li><a href="#">Xəbərlər</a></li>
+                <li><a href="#">Karyera mərkəzi</a></li>
+                <li><a href="#">Təhlükəsizliyiniz</a></li>
+                <li><a href="#">Xeyriyyəçilik</a></li>
+                <li><a href="#">Rauf Əliyevin bioqrafiyası</a></li>
+                <li><a href="#">İdarə Heyətinin Sədri ilə birbaşa əlaqə</a></li>
+              </ul>
+            </div>
+            <div class="section__mob-other">
+              <h4 class="title">Çağrı mərkəzi (24/7)</h4>
+              <ul class="header__nav-contact mb20">
+                <li>
+                  <a href="tel:945">945</a>
+                </li>
+                <li>Ölkədaxili zənglər</li>
+              </ul>
+              <ul class="header__nav-contact mb20">
+                <li>
+                  <a href="tel:+994124041445">+994 12 404 14 45</a>
+                </li>
+                <li>Beynəlxalq zənglər</li>
+              </ul>
+              <ul class="header__nav-contact mb30">
+                <li>
+                  <a href="tel:+994 55 777 09 45">+994 55 777 09 45</a>
+                </li>
+                <li>Whatsapp</li>
+              </ul>
+              <ul class="header__nav-info">
+                <li>
+                  <a href="#">Çağrı mərkəzi</a>
+                </li>
+                <li>
+                  <a href="#">FAQ</a>
+                </li>
+                <li>
+                  <a href="#">Onlayn sorğu</a>
+                </li>
+                <li>
+                  <a href="#">İrad və təkliflər</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="section__mob-social">
+            <div class="section__mob-social-row header__nav-social row">
+              <ul class="row">
+                <li>
+                  <a href="#" class="fa-brands fa-facebook-f"></a>
+                </li>
+                <li>
+                  <a class="fa-brands fa-linkedin-in"></a>
+                </li>
+                <li>
+                  <a href="#" class="fa-brands fa-instagram"></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- End -->
+
+      <!-- Slider -->
+      <div class="slider"></div>
+    </main>
     <footer></footer>
 
     <!-- Jquery -->
