@@ -444,8 +444,6 @@ ul.header__nav-info li a {
   display: none;
 }
 
-
-
 @media only screen and (max-width: 1140px) {
   .header__menu-nav * a {
     font-size: 11px;
@@ -456,7 +454,7 @@ ul.header__nav-info li a {
   .header__nav {
     display: none;
   }
-  
+
   .header__menu-logo {
     padding: 10px 0;
     flex: 0 0 60px;
@@ -583,10 +581,10 @@ ul.header__nav-info li a {
     justify-content: center;
   }
   .header__nav-contact li {
-    margin: 0!important;
+    margin: 0 !important;
   }
   .header__nav-contact li a {
-    font-size: 18px!important;
+    font-size: 18px !important;
   }
   .header__nav-social ul {
     gap: 35px;
@@ -597,7 +595,7 @@ ul.header__nav-info li a {
   .section__selected ul {
     display: none;
   }
-  .select  {
+  .select {
     padding-right: 55px;
   }
   .select span {
@@ -639,11 +637,144 @@ ul.header__nav-info li a {
   }
   .section__selected ul li.selected::after {
     position: absolute;
-    content: '';
+    content: "";
     background: url("../img/sprite.png") -489px -34px;
     width: 18px;
     height: 14px;
     right: 0;
     top: 4px;
   }
+}
+
+/* Section Slider */
+
+.slider {
+  min-width: 0;
+}
+
+.slick {
+  position: relative;
+  display: flex;
+}
+
+.slick__item {
+  position: relative;
+}
+.slick__item-link {
+  position: absolute;
+  bottom: 10%;
+  left: 10%;
+  z-index: 10;
+}
+
+.slick__item-link a {
+  text-align: center;
+  display: block;
+  font-size: 18px;
+  color: #fff;
+  background: #f4c900;
+  border-radius: 15px;
+  width: 205px;
+  height: 50px;
+  line-height: 50px;
+  font-weight: 700;
+}
+.slick__item-link a:hover {
+  background: var(--background-purple);
+  color: #fff !important;
+}
+
+.slick__item img {
+  height: 400px;
+  object-fit: cover;
+}
+
+.slick-list {
+  overflow: hidden;
+}
+
+.slick-track {
+  display: flex;
+}
+
+.slider .slick-dots {
+  position: absolute;
+  bottom: 70px;
+  right: 165px;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  gap: 30px;
+}
+
+.slider .slick-dots li button {
+  font-size: 0;
+  width: 5px;
+  height: 5px;
+  background: #fff;
+  border-radius: 50%;
+}
+
+.slider .slick-dots li.slick-active {
+  position: relative;
+}
+
+/* .slider .slick-dots li.slick-active */
+
+.slider .slick-dots li.slick-active::after {
+  content: "";
+  position: absolute;
+  top: 8px;
+  left: -5px;
+  width: 16px;
+  height: 16px;
+  cursor: pointer;
+  border-radius: 100%;
+  background: url("../img/slider/preloader.png") no-repeat 100%;
+  background-size: 976px 16px;
+  animation: play 10s steps(61)
+}
+
+@keyframes play {
+  0% {
+   background-position:0
+  }
+  to {
+   background-position:-976px
+  }
+ }
+
+.slick-slide.slick-current {
+}
+
+.slick-slide.slick-center {
+}
+
+.slick-arrow {
+  position: absolute;
+  z-index: 10;
+  bottom: 50px;
+  right: 0;
+  width: 50px;
+  height: 50px;
+  font-size: 0;
+  border: 1px solid transparent;
+  background: transparent;
+  border-radius: 50%;
+  transition: all .5s;
+}
+
+.slick-arrow:hover {
+  border: 1px solid #fff;
+}
+
+.slick-prev {
+  right: 105px;
+  background: url(../img/angle-left-solid.svg) no-repeat 15px center/15px;
+  
+}
+
+.slick-next {
+  right: 40px;
+  background: url(../img/angle-right-solid.svg) no-repeat 15px center/15px
 }
