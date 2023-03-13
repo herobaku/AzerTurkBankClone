@@ -1,18 +1,15 @@
-.setion__calculator-calc {
+.section__calculator-calc {
   background: url("../img/bg_maincalc.png");
   background-size: cover;
   background-repeat: no-repeat;
+  padding: 30px 52px;
 }
 .clear {
   padding-left: 0;
   padding-right: 0;
 }
-
-.setion__calculator-calc {
-  padding: 30px 52px;
-  font-size: 32px;
-  color: #262626;
-  font-weight: normal;
+.total-title {
+  margin-bottom: 25px;
 }
 .total-title h2 {
   color: #262626;

@@ -32,8 +32,7 @@ $(document).ready(() => {
     e.preventDefault();
     var sectionId = $(this).attr("href");
     var section = $(sectionId);
-
-    // Показать выбранную секцию и скрыть остальные
+    
     $(".header__nav").each(function () {
       if ($(this).is(section)) {
         $(this).slideDown(300);

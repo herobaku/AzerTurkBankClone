@@ -38,3 +38,6 @@ button {
   background: transparent;
   cursor: pointer;
 }
+main {
+  padding: 50px 0;
+}

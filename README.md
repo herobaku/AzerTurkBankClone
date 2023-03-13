@@ -1,1 +1,3 @@
-#Bu proyekt tam bitmeyib
+Bu proyekt tam bitmeyib
+Hal-hazirda uzerinde duzelish edirem
+AzerTurkBank clone
