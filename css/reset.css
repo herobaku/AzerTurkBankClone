@@ -1,43 +1,41 @@
 @font-face {
-  font-family: "Raleway";
-  src: url(../fonts/Raleway/Raleway-VariableFont_wght.ttf);
+    font-family: 'Raleway';
+    src: url(../fonts/Raleway/Raleway-VariableFont_wght.ttf);
 }
 :root {
-  --background-purple: #6c19ac;
-  --color-text: #262626;
-  --background-button: #9a9a9a;
-  --color-text-hover: #999999;
+    --background-purple: #6c19ac;
+    --color-text: #262626;
+    --background-button: #9a9a9a;
+    --color-text-hover: #999999;
 }
 *,
 *::after,
 *::before {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-  outline: none;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    outline: none;
 }
 html,
 body {
-  font-family: "Raleway", sans-serif;
+    font-family: 'Raleway', sans-serif;
 }
 body {
-  background: #fff;
+    background: #fff;
+    overflow-x: hidden;
 }
 ul {
-  list-style: none;
+    list-style: none;
 }
 a {
-  text-decoration: none;
-  transition: all 0.2s;
+    text-decoration: none;
+    transition: all 0.2s;
 }
 a:hover {
-  color: var(--color-text-hover) !important;
+    color: var(--color-text-hover) !important;
 }
 button {
-  border: 0;
-  background: transparent;
-  cursor: pointer;
-}
-main {
-  padding: 50px 0;
+    border: 0;
+    background: transparent;
+    cursor: pointer;
 }

@@ -1,5 +1,3 @@
-.section-news-blog {
-}
 /* Section Blog */
 .section-blog {
   width: 55%;
@@ -62,10 +60,35 @@
   margin-top: 25px;
   position: relative;
 }
+.form-input {
+  position: relative;
+}
+.form-input label {
+  height: 50px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 0 25px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.form-input label span.name {
+  display: block;
+  background: url('../img/sprite.png') no-repeat -320px 0;
+  width: 16px;
+  height: 16px;
+}
+.form-input label span.phone {
+  display: block;
+  background: url('../img/sprite.png') no-repeat -346px 0;
+  width: 16px;
+  height: 18px;
+}
 .section__subscribe input.inputField {
   height: 50px;
   margin-bottom: 10px;
-  padding: 0 15px;
+  padding: 0 15px 0 55px;
   width: 100%;
   color: #474747;
   background: #fff;
@@ -74,7 +97,7 @@
   border-radius: 2px;
 }
 .section__subscribe input.inputField:focus {
-    box-shadow: 0px 0px 5px 1px rgba(0,0,0,0.15);
+  box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.15);
 }
 .section__subscribe h4 {
   margin-bottom: 30px;
@@ -105,4 +128,24 @@
 .section__subscribe .section__subscribe-button button:hover {
   background: purple;
   color: #fff;
+}
+
+@media only screen and (max-width: 999px) {
+  .paddingReset {
+    padding: 0 25px;
+  }
+  .section__news-blog {
+    flex-direction: column;
+  }
+  .section-blog {
+    width: 100%;
+    padding-bottom: 30px;
+    margin-bottom: 30px;
+  }
+  .section__subscribe {
+    width: 100%;
+  }
+  .total-news {
+    text-align: center;
+  }
 }

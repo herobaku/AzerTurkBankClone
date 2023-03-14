@@ -199,7 +199,7 @@ header {
 }
 
 #menu__top-right li a:before {
-  content: "";
+  content: '';
   display: table;
   position: absolute;
   top: 0;
@@ -364,7 +364,7 @@ ul.header__nav-default li a {
 }
 
 ul.header__nav-info li {
-  list-style-type: "·";
+  list-style-type: '·';
   padding-left: 10px;
   color: var(--background-purple);
   margin-bottom: 10px;
@@ -478,7 +478,7 @@ ul.header__nav-info li a {
   a.header__menu-burger {
     background: url(../img/sprite.png) -158px -34px;
     position: absolute;
-    content: "";
+    content: '';
     width: 18px;
     height: 12px;
     top: 50%;
@@ -618,14 +618,14 @@ ul.header__nav-info li a {
     position: relative;
   }
   .select span::after {
-    content: "";
+    content: '';
     position: absolute;
     top: 50%;
     right: 0;
     -webkit-transform: translateY(-50%);
     -ms-transform: translateY(-50%);
     transform: translateY(-50%);
-    background: url("../img/sprite.png") -468px -34px;
+    background: url('../img/sprite.png') -468px -34px;
     width: 10px;
     height: 7px;
   }
@@ -651,8 +651,8 @@ ul.header__nav-info li a {
   }
   .section__selected ul li.selected::after {
     position: absolute;
-    content: "";
-    background: url("../img/sprite.png") -489px -34px;
+    content: '';
+    background: url('../img/sprite.png') -489px -34px;
     width: 18px;
     height: 14px;
     right: 0;
