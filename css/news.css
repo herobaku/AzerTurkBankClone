@@ -1,4 +1,7 @@
 /* Section Blog */
+section.section__news {
+  margin-bottom: -80px;
+}
 .section-blog {
   width: 55%;
   padding-right: 40px;

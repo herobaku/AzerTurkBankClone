@@ -1,13 +1,10 @@
-/*
-* Prefixed by https://autoprefixer.github.io
-* PostCSS: v8.4.14,
-* Autoprefixer: v10.4.7
-* Browsers: last 4 version
-*/
-
 header.header {
-  position: relative;
+  position: absolute;
   z-index: 1;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: #fff;
 }
 
 header {
@@ -447,6 +444,10 @@ ul.header__nav-info li a {
 }
 
 @media only screen and (max-width: 999px) {
+  header.header {
+    position: sticky;
+    
+  }
   .header__nav {
     display: none;
   }

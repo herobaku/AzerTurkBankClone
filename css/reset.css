@@ -1,6 +1,10 @@
 @font-face {
-    font-family: 'Raleway';
-    src: url(../fonts/Raleway/Raleway-VariableFont_wght.ttf);
+    font-family: 'RalewayRegular';
+    src: url("../fonts/Raleway/static/Raleway-Regular.ttf");
+}
+@font-face {
+    font-family: 'RalewayBold';
+    src: url("../fonts/Raleway/static/Raleway-Bold.ttf");
 }
 :root {
     --background-purple: #6c19ac;
@@ -18,7 +22,7 @@
 }
 html,
 body {
-    font-family: 'Raleway', sans-serif;
+    font-family: 'RalewayRegular', sans-serif;
 }
 body {
     background: #fff;
@@ -30,9 +34,6 @@ ul {
 a {
     text-decoration: none;
     transition: all 0.2s;
-}
-a:hover {
-    color: var(--color-text-hover) !important;
 }
 button {
     border: 0;

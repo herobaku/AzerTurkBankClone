@@ -1,19 +1,11 @@
-/*
-* Prefixed by https://autoprefixer.github.io
-* PostCSS: v8.4.14,
-* Autoprefixer: v10.4.7
-* Browsers: last 4 version
-*/
-
 .slider {
   min-width: 0;
+  padding-top: 95px;
 }
 
 .slick {
   position: relative;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  display: block;
 }
 
 .slick__item {
@@ -24,6 +16,11 @@
   bottom: 10%;
   left: 10%;
   z-index: 10;
+}
+
+.slick-loading .slick-track
+{
+    visibility: hidden;
 }
 
 .slick__item-link a {
@@ -86,7 +83,7 @@
 .slider .slick-dots li.slick-active::after {
   content: "";
   position: absolute;
-  top: 8px;
+  top: 5px;
   left: -5px;
   width: 16px;
   height: 16px;
@@ -145,8 +142,19 @@
   right: 40px;
   background: url(../img/angle-right-solid.svg) no-repeat 15px center/15px;
 }
+
 .slickMobile {
   display: none;
+}
+
+.slick-active button {
+  visibility: hidden;
+}
+
+@media only screen and (max-width: 999px) {
+  .slider {
+    padding-top: 0px;
+  }
 }
 
 @media only screen and (max-width: 767px) {
