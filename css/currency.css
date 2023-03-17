@@ -114,16 +114,18 @@
     border-radius: initial;
     padding: 0 5px;
 }
-
-.line {
+.section__currency-right .line {
     background: url("../img/rates_line.jpg") no-repeat;
     width: 100%;
     height: 9px;
 }
-
-.input input:focus {
+.section__currency-right .input input:focus {
     box-shadow: none;
 }
+.field select {
+    padding: 11px;
+}
+
 
 
 
