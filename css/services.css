@@ -1,0 +1,129 @@
+.section__services {
+    padding: 80px 0;
+}
+.section__services-total {
+    border: 1px dashed #eee;
+    padding: 25px 0 0 52px;
+    position: relative;
+    font: 16px/1.2 'RalewayRegular',"Trebuchet MS", sans-serif;
+    width: 100%;
+    height: 100px;
+}
+.section__services-total .section-title {
+    color: #262626;
+    font-size: 26px;
+    margin-bottom: 30px;
+    position: absolute;
+    top: -20px;
+    background: #fff;
+}
+.section__services-total .desc {
+    display: none;
+}
+.section__services-total .slick-track {
+    display: flex;
+}
+.section__blog-blog {
+    display: flex;
+    gap: 11px;
+    position: absolute;
+    top: 35px;
+}
+.poster {
+    width: 185px;
+}
+.poster img {
+    width: 100%;
+    border-radius: 15px;
+}
+
+.section__services .slick-list {
+    display: flex;
+}
+
+
+@media only screen and (max-width: 766px) {
+    .section__services-total {
+        height: 100%;
+        padding: 30px 10px;
+    }
+    .section-title {
+        font-size: 20px;
+        margin-bottom: 25px;
+        margin-bottom: initial;
+        position: initial;
+    }
+    .section__services-total .slick-list {
+        overflow: hidden;
+    }
+    .section__services-total .slick-track {
+        display: flex;
+        gap: 20px;
+    }
+    .section__blog-blog {
+        gap: 11px;
+        position: initial;
+        padding: 0 0 40px 0;
+    }
+    .section__blog-item {
+        flex: 0 0 230px;
+        width: 230px;
+    }
+    .section__blog-item .poster {
+        width: 230px;
+        margin-bottom: 30px;
+        padding-bottom: 10px;
+    }
+    .section__blog-item .poster img {
+        width: 100%;
+        border-radius: 10px;
+    }
+    .section__blog-item .desc h4.title1 {
+        font-size: 14px;
+        color: #999;
+        margin-bottom: 5px;
+    }
+    .section__blog-item .desc h2.title2 {
+        font-size: 30px;
+        margin-bottom: 20px;
+        font-variant-numeric: lining-nums;
+    }
+    .section__blog-item .desc {
+        font-size: 16px;
+        color: #262626;
+        display: block;
+    }
+    .section__blog-item .desc a {
+        text-decoration: underline;
+    }
+    .section__blog-item p.desc {
+        margin-bottom: 25px;
+    }
+    .section__blog-blog .slick-arrow {
+        position: absolute;
+        bottom: 10px;
+        padding-bottom: 20px;
+        background: url("../img/sprite.png") no-repeat;
+        font-size: 0;
+        width: 35px;
+        height: 9px;
+    }
+    .section__blog-blog .slick-prev {
+        right: 51%;
+        background-position: -198px 0;
+    }
+    .section__blog-blog .slick-prev:hover,
+    .section__blog-blog .slick-prev:active {
+        background-position: -230px -34px;
+    }
+    .section__blog-blog .slick-next {
+        left: 51%;
+        background-position: -258px 0;
+    }
+    .section__blog-blog .slick-next:hover,
+    .section__blog-blog .slick-next:active {
+        left: 51%;
+        background-position: -280px -34px;
+    }
+
+}

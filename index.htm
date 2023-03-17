@@ -518,22 +518,15 @@
       </section>
       <!-- End -->
 
-      <!-- Services || Onlayn xidmətlər -->
-      <section class="section__services">
-        <div class="container-1080">
+      <!-- Offer || Yeni təklif!-->
+      <section class="section__offer">
+        <div class="container-1080 paddingReset">
           <div class="total-title">
             <h2>Yeni təklif!</h2>
             <div class="subtitle">
               <p>Fərdi müştərilər üçün kartlar</p>
             </div>
           </div>
-        </div>
-      </section>
-      <!-- End -->
-
-      <!-- Offer || Yeni təklif!-->
-      <section class="section__offer">
-        <div class="container-1080 paddingReset">
           <div class="section__offer-article row">
             <div class="section__offer-article-a">
               <article class="article-content">
@@ -568,8 +561,161 @@
       </section>
       <!-- End -->
 
+      <!-- Services || Onlayn xidmətlər -->
+      <section class="section__services">
+        <div class="container-1080 clear">
+          <div class="section__services-total">
+            <div class="section-title">Onlayn xidmətlər</div>
+            <div class="section__blog-blog">
+              <div class="section__blog-item">
+                <div class="poster">
+                  <img src="./img/services/frame-1.png" />
+                </div>
+                <div class="desc">
+                  <h4 class="title1">Test rejimində çalışır</h4>
+                  <h2 class="title2">atb360 mobil tətbiqi</h2>
+                  <p class="desc">
+                    Müasir və sadə mobil bank ilə gəlir və xərclərinizi
+                    rahatlıqla idarə edin!
+                  </p>
+                  <a href="#">Ətraflı</a>
+                </div>
+              </div>
+              <div class="section__blog-item">
+                <div class="poster">
+                  <img src="./img/services/frame-2.png" />
+                </div>
+                <div class="desc">
+                  <h4 class="title1">atb card-dan 0%-lə köçürün</h4>
+                  <h2 class="title2">Kartdan karta köçürmə</h2>
+                  <p class="desc">
+                    Kartdan ölkənin istənilən bank kartına sürətli pul köçürməsi
+                  </p>
+                  <a href="#">Onlayn köçür</a>
+                </div>
+              </div>
+              <div class="section__blog-item">
+                <div class="poster">
+                  <img src="./img/services/frame-3.png" />
+                </div>
+                <div class="desc">
+                  <h4 class="title1">Kredit və kart ödənişləri</h4>
+                  <h2 class="title2">Kredit ödənişi və karta mədaxil</h2>
+                  <p class="desc">
+                    Kreditin aylıq ödənişini həyata keçirə və ya kartlarınızın
+                    balansını artıra bilərsiniz
+                  </p>
+                  <a href="#">Onlayn ödə</a>
+                </div>
+              </div>
+              <div class="section__blog-item">
+                <div class="poster">
+                  <img src="./img/services/frame-4.png" />
+                </div>
+                <div class="desc">
+                  <h4 class="title1">Arayış sifarişi</h4>
+                  <h2 class="title2">Onlayn arayış sifarişi</h2>
+                  <p class="desc">
+                    Arayışı banka yaxınlaşmadan onlayn sifariş edin
+                  </p>
+                  <a href="#">Onlayn sifariş</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- End -->
+
       <!-- Currency || Valyuta məzənnəsi -->
-      <section class="section__currency mb30"></section>
+      <section class="section__currency mb30">
+        <div class="container-1080">
+          <div class="borderTop borderBottom">
+            <div class="section__currency-title">
+              <span>Valyuta məzənnəsi*</span>
+            </div>
+            <div class="section__currency-container">
+              <div class="section__currency-left">
+                <table class="table">
+                  <tr>
+                    <th></th>
+                    <th>Alış</th>
+                    <th>Satış</th>
+                  </tr>
+                  <tr>
+                    <td class="currencyTitle">USD</td>
+                    <td class="currencyChange">1.6990</td>
+                    <td class="currencyChange">1.7020</td>
+                  </tr>
+                  <tr>
+                    <td class="currencyTitle">EUR</td>
+                    <td class="currencyChange">1.7820</td>
+                    <td class="currencyChange">1.8220</td>
+                  </tr>
+                  <tr>
+                    <td class="currencyTitle">GBP</td>
+                    <td class="currencyChange">2.0340</td>
+                    <td class="currencyChange">2.0910</td>
+                  </tr>
+                </table>
+                <div class="section__currency-exchangeNews">
+                  <div class="left">
+                    <span>Yeniləndi 16.03.2023</span>
+                  </div>
+                  <div class="right">
+                    <span
+                      ><a href="#"
+                        >Ətraflı<i class="fa-solid fa-angle-right"></i> </a
+                    ></span>
+                  </div>
+                </div>
+              </div>
+              <div class="section__currency-right">
+                <div class="section__currency-converter">
+                  <div class="section__currency-tit">Valyuta kalkulyatoru</div>
+                  <div class="section__currency-desc">
+                    Nağd valyuta məzənnəsi əsasında hesablama
+                  </div>
+                  <div class="sales">Satmaq istəyirəm</div>
+                  <div class="input_group">
+                    <div class="form-input">
+                      <div class="input">
+                        <input type="number" id="inputAmount" />
+                      </div>
+                      <div class="field">
+                        <select id="inputCurrency" onchange="convertCurrency()">
+                          <option value="AZN">AZN</option>
+                          <option value="USD">USD</option>
+                          <option value="EUR">EUR</option>
+                          <option value="GBP">GBP</option>
+                        </select>
+                      </div>
+                    </div>
+                    <div class="line"></div>
+                    <div class="sales">Almaq</div>
+                    <div class="form-input">
+                      <div class="input">
+                        <input type="text" id="outputAmount" disabled />
+                      </div>
+                      <div class="field">
+                        <select
+                          id="outputCurrency"
+                          onchange="convertCurrency()"
+                        >
+                          <option value="AZN">AZN</option>
+                          <option value="USD">USD</option>
+                          <option value="EUR">EUR</option>
+                          <option value="GBP">GBP</option>
+                        </select>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
       <!-- End -->
 
       <!-- News || Bankımızın xəbərləri -->
@@ -691,8 +837,8 @@
                 <a href="#"><img src="./img/atb360_footer_screen_az.png" /></a>
               </div>
               <div class="section__mobile-title">
-                  <a href="#" class="title">atb360</a>
-                  <a href="#" class="subtitle">Rahat və müasir mobil tətbiq </a>
+                <a href="#" class="title">atb360</a>
+                <a href="#" class="subtitle">Rahat və müasir mobil tətbiq </a>
               </div>
             </div>
           </div>
@@ -947,6 +1093,9 @@
     <!-- Slick -->
     <script src="./js/slick.min.js"></script>
     <script src="./js/slider.js"></script>
+    <!-- End -->
+    <!-- Converter -->
+    <script src="./js/converter.js"></script>
     <!-- End -->
   </body>
 </html>

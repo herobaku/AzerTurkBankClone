@@ -1,0 +1,140 @@
+.section__currency {
+    margin-top: 30px;
+}
+.section__currency .borderTop, .borderBottom {
+    padding-top: 20px;
+    border-top: 1px solid #f4c900;
+    border-bottom: 1px solid #f4c900;
+    padding-bottom: 20px;
+}
+.section__currency-title {
+    margin-bottom: 25px;
+}
+.section__currency-title span {
+    color: #262626;
+    font-size: 32px;
+    font-weight: normal;
+}
+.section__currency-container {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    padding-left: 25px;
+}
+.section__currency-left {
+    width: 60%;
+}
+.section__currency-left table.table {
+    width: 100%;
+    border: none;
+    font-size: 30px;
+    text-align: left;
+}
+.section__currency-left table.table th {
+    color: #999999;
+    font-size: 16px;
+    padding-bottom: 20px;
+    text-align: center;
+}
+.section__currency-left table.table td {
+    padding: 5px 0;
+}
+.currencyTitle {
+    color: #262626;
+    text-transform: uppercase;
+    width: 33%;
+}
+.currencyChange {
+    text-align: center;
+}
+.section__currency-exchangeNews {
+    display: flex;
+    justify-content: space-between;
+    border-top: 1px solid #dbdbdb;
+    margin-top: 20px;
+    padding-top: 20px;
+}
+.section__currency-exchangeNews .right span {
+    display: flex;
+    align-items: center;
+}
+.section__currency-exchangeNews .right span a {
+    font-size: 18px;
+    color: #262626;
+    text-decoration: underline;
+}
+.section__currency-exchangeNews .right span a i {
+    font-size: 12px;
+    padding-left: 10px;
+    font-weight: 700;
+}
+.section__currency-exchangeNews .right span a:hover {
+    text-decoration: none;
+}
+.section__currency-right {
+    width: 40%;
+    padding-left: 40px;
+}
+.section__currency-converter {
+    width: 338px;
+    clip-path: polygon(0 0, 100% 0, 100% 80%, 0% 100%);
+    border: 1px solid #dbdbdb;
+    padding: 30px;
+    height: 313px;
+}
+.section__currency-tit {
+    font-size: 18px;
+    color: #262626;
+    margin-bottom: 15px;
+    font-weight: 700;
+}
+.section__currency-desc {
+    color: #999;
+    margin-bottom: 20px;
+}
+.section__currency-right .input_group {
+    display: flex;
+    flex-direction: column;
+}
+
+.section__currency-right .form-input {
+    display: flex;
+    align-items: center;
+    margin-bottom: 5px;
+}
+.section__currency-right .form-input .input {
+    padding-right: 10px;
+}
+.section__currency-right .form-input .input input {
+    border: none;
+    background: #fff;
+    width: 100%;
+    color: #474747;
+    height: 45px;
+    border-radius: initial;
+    padding: 0 5px;
+}
+
+.line {
+    background: url("../img/rates_line.jpg") no-repeat;
+    width: 100%;
+    height: 9px;
+}
+
+.input input:focus {
+    box-shadow: none;
+}
+
+
+
+@media only screen and (max-width: 999px) {
+    .section__currency-container {
+        flex-direction: column;
+    }
+    .section__currency-left {
+        width: 100%;
+    }
+    .section__currency-right {
+        width: 100%;
+    }
+} 
