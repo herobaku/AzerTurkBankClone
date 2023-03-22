@@ -3,18 +3,13 @@ const inputCurrency = document.getElementById('inputCurrency')
 const outputCurrency = document.getElementById('outputCurrency')
 const outputAmount = document.getElementById('outputAmount')
 
-function convertCurrency() {
+async function convertCurrency() {
   const apiKey = '34d26949a41b319779df34af'
   const from = inputCurrency.value
   const to = outputCurrency.value
   const amount = inputAmount.value
-  inputCurrency.addEventListener('change', (e) => {
-    if (from.value === 'USD' || outputCurrency.value === 'EUR') {
-      console.log(e)
-    }
-  })
   const url = `https://v6.exchangerate-api.com/v6/${apiKey}/latest/${from}`
-  fetch(url)
+  await fetch(url)
     .then((response) => response.json())
     .then((data) => {
       const rate = data.conversion_rates[to]
