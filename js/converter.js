@@ -14,12 +14,15 @@ async function convertCurrency() {
     .then((data) => {
       const rate = data.conversion_rates[to]
       const convertedAmount = (amount * rate).toFixed(2)
-      outputAmount.value = `${convertedAmount} ${to}`
+      outputAmount.value = `${convertedAmount}`
     })
     .catch((error) => console.log(error))
 }
 
-inputCurrency.addEventListener('change', () => {
+function currency() {
+  // if( from === "" ) {
+  //   console.log("salam");
+  // }
   const inputCurr = inputCurrency.value
 
   Array.from(outputCurrency.options).forEach((option) => {
@@ -32,4 +35,7 @@ inputCurrency.addEventListener('change', () => {
   if (selectedCurrencyOption) {
     selectedCurrencyOption.style.display = 'none'
   }
-})
+}
+
+inputCurrency.addEventListener('change', currency)
+// inputCurrency.addEventListener('input', currency)
