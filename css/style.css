@@ -1069,17 +1069,9 @@ ul.header__nav-info li a {
   border-bottom: 2px solid orange;
 }
 
-
-
-
-
-
-
-
-
-
 .calc__column {
   width: 100%;
+  padding: 0 10px;
 }
 
 .calc-range {
@@ -1108,7 +1100,7 @@ ul.header__nav-info li a {
   font-size: 25px;
 }
 .calc-range .price input:focus,
-.calc-range input[type=range]:focus {
+.calc-range input[type='range']:focus {
   box-shadow: none;
 }
 .calc-range .price span {
@@ -1138,7 +1130,7 @@ ul.header__nav-info li a {
   width: 12px;
   height: 12px;
   border-radius: 50%;
-  box-shadow: 0 0 0px 5px #fff, 0 0 0px 6px #E8E7E6AA;
+  box-shadow: 0 0 0px 5px #fff, 0 0 0px 6px #e8e7e6aa;
   cursor: pointer;
   display: block;
   box-sizing: border-box;
@@ -1152,46 +1144,90 @@ ul.header__nav-info li a {
   left: 0;
   right: 0;
 }
-.min, .max {
+.min,
+.max {
   color: var(--color-text-hover);
 }
 
-
-.calc-info {
+.calc__info {
   width: 30%;
   padding-left: 40px;
 }
 
+.calc__info .data {
+  font-size: 48px;
+  margin-bottom: 15px;
+  color: #474747;
+}
 
+.calc__info sup {
+  font-size: 65%;
+  margin-left: 5px;
+}
 
+.calc__info title {
+  color: #474747;
+}
 
+.calc__column-contract span {
+  position: relative;
+  cursor: pointer;
+  padding-left: 35px;
+  display: block;
+}
 
+.calc__column-contract span::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 24px;
+  height: 24px;
+  display: block;
+  border: 1px solid #dbdbdb;
+}
 
+.calc__column-contract span a {
+  color: #474747;
+  text-decoration: underline;
+  display: inline-block;
+  padding-top: 5px;
+}
 
+.calc__info-item.article-button {
+  position: initial;
+  transform: none;
+}
 
+@media only screen and (max-width: 999px) {
+  .section__calculator-calc {
+    padding: 30px 25px;
+  }
+  .calc-range {
+    width: 63%;
+    padding-right: 20px;
+  }
+  .calc__info {
+    width: 37%;
+    padding-left: 20px;
+  }
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+@media only screen and (max-width: 767px) {
+  .section__calculator-calc {
+    
+  }
+  .calc-range {
+    width: 100%;    
+  }
+  .calc__info {
+    width: 100%;
+  }
+  .calc__info-item.article-button {
+    position: initial;
+    transform: none;
+  }
+}
 
 /* End */
 
