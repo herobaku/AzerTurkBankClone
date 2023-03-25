@@ -15,20 +15,21 @@ form.addEventListener("submit", function(e){
   e.preventDefault()
 })
 
-const linkModul = document.querySelector('.link-modul'),
-  modalOrder = document.querySelector('.modal__order'),
-  closeModal = document.querySelector('.subtitle i'),
-  modalYellow = document.querySelector('.modal-yellow')
+// const linkModul = document.querySelector('.link-modul'),
+//   modalOrder = document.querySelector('.modal__order'),
+//   closeModal = document.querySelector('.subtitle i'),
+//   modalYellow = document.querySelector('.modal-yellow')
 
-linkModul.addEventListener('click', () => {
-  modalOrder.style.right = '0'
-  modalYellow.classList.add("active")
-  document.body.style.overflow="hidden"
-})
+// linkModul.addEventListener('click', () => {
+//   modalOrder.style.right = '0'
+//   modalYellow.classList.add("active")
+//   document.body.style.overflow="hidden"
+//   document.body.style.height="1230px"
+// })
 
-closeModal.addEventListener('click', () => {
-  modalOrder.style.right = '-100%'
-  modalYellow.classList.remove("active")
-  document.body.style.overflowX="hidden"
-  document.body.style.overflowY="auto"
-})
+// closeModal.addEventListener('click', () => {
+//   modalOrder.style.right = '-100%'
+//   modalYellow.classList.remove("active")
+//   document.body.style.overflowX="hidden"
+//   document.body.style.overflowY="auto"
+// })

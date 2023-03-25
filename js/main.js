@@ -50,5 +50,5 @@ $(document).ready(() => {
     $(".section__selected ul").toggle();
   })
 
-
+$(".modal__order").hide()
 });
