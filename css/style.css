@@ -1214,11 +1214,11 @@ ul.header__nav-info li a {
 }
 
 @media only screen and (max-width: 767px) {
-  .section__calculator-calc {
-    
+  .calc__column {
+    flex-direction: column;
   }
   .calc-range {
-    width: 100%;    
+    width: 100%;
   }
   .calc__info {
     width: 100%;
@@ -1226,6 +1226,25 @@ ul.header__nav-info li a {
   .calc__info-item.article-button {
     position: initial;
     transform: none;
+  }
+  .total-title {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .total-title h2 {
+    order: 2;
+    font-size: 24px;
+    margin-top: 10px;
+  }
+  .subtitle {
+    justify-content: start;
+  }
+  .section__calculator-calc {
+    background-size: 100% 100%;
+  }
+  .calc__info .data {
+    font-size: 40px;
   }
 }
 
@@ -1536,12 +1555,11 @@ ul.header__nav-info li a {
 @media only screen and (max-width: 999px) {
   .section__currency-container {
     flex-direction: column;
+    padding: 0;
   }
-
   .section__currency-left {
     width: 100%;
   }
-
   .section__currency-right {
     width: 100%;
     padding: 0;
@@ -2324,10 +2342,226 @@ footer.footer * {
   }
 }
 
-@media only screen and (max-width: 767px) {
-  .container-1080 {
-    padding: 0;
-  }
+/* End */
+
+/* Modal Yellow */
+
+.modal-yellow.active {
+  display: block;
+}
+
+.modal-yellow {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: #f4c900;
+  width: 100%;
+  height: 100vh;
+  z-index: 10;
+  opacity: 0.5;
+  display: none;
+}
+
+/* End */
+
+/* Modal */
+
+.modal__order {
+  position: absolute;
+  width: 50%;
+  height: 100%;
+  background: #fff;
+  top: 0;
+  right: -100%;
+  display: table;
+  z-index: 999;
+  transition: all .3s;
+}
+
+.modal__order-padding {
+  padding: 42px 30px 50px;
+  height: 100vh;
+  overflow-Y: auto;
+}
+
+.modal__order i.fa-size {
+  display: block;
+  font-size: 1.3em;
+  padding: 0 10px;
+  cursor: pointer;
+  border-bottom: 1px solid orange;
+  padding: 0 20px;
+  margin-top: -10px;
+  padding-bottom: 5px;
+}
+
+.model__order-title {
+  padding: 20px 100px 20px 15px;
+  background: #f9f9f9;
+  margin: 0 -15px;
+}
+
+.model__order-title h2 {
+  font-size: 36px;
+  margin-bottom: 15px;
+  color: #262626;
+}
+
+.model__order-title h4 {
+  font-size: 18px;
+}
+
+form.form__aside {
+  flex-direction: column;
+  width: 100%;
+  margin-top: 10px;
+}
+
+.form__aside-input {
+  margin-bottom: 20px;
+}
+
+.input-form {
+  padding: 0 10px;
+}
+
+.input-form.w50 {
+  width: 50%;
+}
+
+.input-form.w66 {
+  width: 66%;
+}
+
+.input-form.w100 {
+  width: 100%;
+}
+
+.input-form.w33 {
+  width: 33%;
+}
+
+.input-form input {
+  width: 100%;
+  border: 1px solid #dbdbdb;
+  height: 50px;
+  padding: 0 15px;
+}
+
+.form__aside .select {
+  appearance: none;
+  height: 50px;
+  width: 100%;
+  background: #fff;
+  border: 1px solid #dbdbdb;
+  padding: 0 15px;
+}
+
+.form__aside .select:focus {
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+}
+
+.form__aside .select option {
+  font-size: 16px;
+  color: #111;
+}
+
+.input-form .map {
+  background: #f9f9f9;
+  border: 1px solid #dbdbdb;
+  height: 50px;
+  line-height: 50px;
+  margin-right: -10px;
+}
+
+.input-form .map i {
+  margin-left: 10px;
+}
+
+.input-form .map span {
+  color: #262626;
+  font-size: 16px;
+  text-align: center;
+  display: block;
+  width: 100%;
+}
+
+.form__aside-title h2 {
+  font-size: 26px;
+  margin-bottom: 25px;
+  color: #262626;
+  padding-left: 10px;
+}
+
+.input-form input::placeholder {
+  color: #474747;
+}
+
+.input-form a.fin {
+  background-color: #f9f9f9;
+  color: #474747;
+  max-width: 100%;
+  height: 50px;
+  border-radius: 15px;
+  text-align: center;
+  font-size: 18px;
+  line-height: 50px;
+  display: block;
+  font-family: 'RalewayBold';
+}
+
+.form__aside .calc__column-contract {
+  padding: 0 10px;
+}
+
+.form__aside button {
+  color: #fff;
+  font-size: 18px;
+  text-align: center;
+  width: 375px;
+  height: 50px;
+  border-radius: 15px;
+  background: #6c19ac;
+}
+
+.form__aside .rule {
+  padding-left: 15px;
+}
+
+.form__aside .rule, .form__aside .rule a {
+  font-size: 14px;
+  color: #999;
+  position: relative;
+  margin-top: 10px;
+}
+
+.form__aside .rule a {
+  text-decoration: underline;
+}
+
+.form__aside .rule a:hover {
+  color: #6c19ac;
+  text-decoration: none;
+}
+
+.star::after {
+  content: "*";
+  position: absolute;
+  left: 0;
+  bottom: -20px;
+  color: #f4c900;
+  font-size: 40px;
+  display: block;
+}
+
+.input-form .img {
+  height: 40px;
+}
+
+.input-form .img img {
+  height: 100%;
 }
 
 /* End */
